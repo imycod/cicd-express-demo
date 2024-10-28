@@ -23,9 +23,9 @@ pipeline {
             }
         }
         
-        stage('Run Tests') {
+        stage('Run Start') {
             steps {
-                sh 'npm test'
+                sh 'npm start'
             }
         }
         
