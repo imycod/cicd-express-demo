@@ -7,7 +7,7 @@ pipeline {
     }
     
     tools {
-        nodejs 'NodeJS 16'  // 使用在全局工具配置中设置的NodeJS
+        nodejs 'NodeJS 16'  
     }
     
     stages {
@@ -40,7 +40,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    // 停止并删除旧容器（如果存在）
                     sh '''
                         docker ps -f name=backend -q | xargs --no-run-if-empty docker stop
                         docker ps -a -f name=backend -q | xargs --no-run-if-empty docker rm
