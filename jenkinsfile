@@ -2,12 +2,8 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE = 'your-backend-image-name'
+        DOCKER_IMAGE = 'cicd-express-demo'
         DOCKER_TAG = "${BUILD_NUMBER}"
-    }
-    
-    tools {
-        nodejs 'NodeJS 16'  
     }
     
     stages {
