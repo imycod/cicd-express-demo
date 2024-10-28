@@ -1,0 +1,14 @@
+{
+  "name": "cicd-express-demo",
+  "type": "module",
+  "scripts": {
+    "start": "node main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
